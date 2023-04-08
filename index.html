@@ -85,14 +85,14 @@
       playButton.style.display = "block";
       const game = () => {
         let canva = document.querySelector(".canva");
-        W = 430;
+        W = 400;
         H = 512;
 
         let viechle = [
           ["./cars/audi.png", 100, 212],
           ["./cars/car.png", 100, 212],
           ["./cars/mini_truck.png", 100, 212],
-          ["./cars/taxi.png", 100, 214],
+          ["./cars/taxi.png", 100, 212],
         ];
 
         canva.width = W;
@@ -189,7 +189,7 @@
         cars.push(new Car());
         class MyCar {
           constructor() {
-            this.x = 0;
+            this.x = random(10,380);
             this.y = 350;
             this.speed = 0;
             this.xspeed = 25;
